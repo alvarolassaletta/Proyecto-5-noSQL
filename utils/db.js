@@ -1,6 +1,6 @@
 const  mongoose = require ('mongoose');
 
-const urlDb= 'mongodo://localhost27017/proyecto-movies';
+const urlDb= 'mongodb://localhost:27017/proyecto-movies';
 
 const connect = async() =>{
 
@@ -8,7 +8,7 @@ const connect = async() =>{
          await mongoose.connect(urlDb)
 
     }catch(error){
-        console.log(`Error when connection with database: ${error}`)
+        console.log(`Error when connecting with database: ${error}`)
     }
 }
 
