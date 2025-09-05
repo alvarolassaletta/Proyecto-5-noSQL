@@ -56,7 +56,7 @@ const seedMovies = async () =>{
           const allMovies= await Movie.find()
 
          if(allMovies.length){
-          Movie.collection.drop()
+          await Movie.collection.drop()
           console.log('Collección eliminada')
         }
       }catch(error){
@@ -79,3 +79,4 @@ const seedMovies = async () =>{
     }
 
 }
+seedMovies()
