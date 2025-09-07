@@ -57,23 +57,23 @@ const seedMovies = async () =>{
 
          if(allMovies.length){
           await Movie.collection.drop()
-          console.log('Collección eliminada')
+          console.log('Collection dropped successfully')
         }
       }catch(error){
-        console.log(`Error al eliminar documentos ${error}`)
+        console.log(`Error dropping collection ${error}`)
       }
      
 
       try{
         const insertedMovies=  await Movie.insertMany(movieDocuments)
-        console.log('Documentos insertados')
+        console.log('Documents inserted  successfully')
      
       }catch(error){
-        console.log(`Error al insertar documentos ${error}`)
+        console.log(`Error inserting documents  ${error}`)
       }
       
     }catch(error){
-        console.log(`Error en el seed ${error}`)
+        console.log(`Error seeding database ${error}`)
     } finally{
          await mongoose.disconnect()
     }
