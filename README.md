@@ -70,4 +70,4 @@ La estructura del proyecto es la siguiente:
 
 ## Autor
 
-Alvaro Lassaletta - Agosto / Septiembre 2025.
+Álvaro Lassaletta - Agosto / Septiembre 2025.
