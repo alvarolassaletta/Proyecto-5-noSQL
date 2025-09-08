@@ -18,7 +18,7 @@ const router= express.Router()
 
 
 //1.1 Crear un endpoint get que devuelva todas las películas.
-//ejemplo de peticion Get 'http://localhost:3000/movies'
+
 router.get('/', async(req,res,next)=>{
     try{
         const  movies= await Movie.find()
@@ -30,7 +30,7 @@ router.get('/', async(req,res,next)=>{
 })
 
 //1.2. Crear un endpoint get que devuelva una película según su _id
-//http://localhost:3000/movies/68badaa16e33127cf49cd419
+
 
 router.get('/id/:id',async(req,res,next)=>{
     try{
@@ -52,7 +52,7 @@ router.get('/id/:id',async(req,res,next)=>{
 
 
 //1.3.Crear un endpoint get que devuelva un valor por su titulo.
-//http://localhost:3000/movies/title/Buscando%20a%20Nemo
+
 router.get('/title/:title', async (req,res,next)=>{
     try{
         
@@ -76,7 +76,7 @@ router.get('/title/:title', async (req,res,next)=>{
 })
 
 //1.4.Crear un endpoint get que devuelva los documentos según su género.
-//http://localhost:3000/movies/genre/Acci%C3%B3n
+
 router.get('/genre/:genre',async(req,res,next)=>{
 
     try{
@@ -98,7 +98,7 @@ router.get('/genre/:genre',async(req,res,next)=>{
 
 
 //1.5. Crear un endpoint get que devuelva las películas que se han estrenado a partir de 2010. 
-//http://localhost:3000/movies/year/2010
+
 router.get('/year/:year', async(req,res,next)=>{
     
    try{
