@@ -6,10 +6,10 @@ API REST  para gestionar información  de películas de un cine. Quinta parte de
 
 El objetivo de este proyecto:
 
- - construir un servidor  y las rutas utilizando Express
- - definir un Schema y  modelo MOVIE con Mongoose 
- - crear una conexion a la base ded atos con Mongoose  
- - completar un CRUD completo 
+ - construir un servidor  y las rutas utilizando Express.
+ - definir un Schema y  modelo MOVIE con Mongoose. 
+ - crear una conexion a la base de datos con Mongoose.  
+ - completar un CRUD completo.
  - crear una colección en base de datos que contenga la información de los cines que van a emitir las películas. 
  
  ## Requerimientos 
